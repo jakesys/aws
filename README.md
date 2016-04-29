@@ -1,6 +1,6 @@
 # jakesys/aws
 
-Small, simple Alpine Linux-based Docker container for AWS CLI.
+Small, simple Alpine Linux based Docker container for AWS CLI.
 
 Based on the official `alpine:latest` image and the latest `aws` CLI via `pip`.
 
