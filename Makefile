@@ -47,7 +47,7 @@ tidy:
 build:
 	@source .version && \
 	    BUILD=`expr $$BUILD + 1` ; \
-	    echo "Building $(NAME) $$VERSION-$$VERSION ..." ; \
+	    echo "Building $(NAME) $$VERSION-$$PATCH ..." ; \
 	    echo -e "VERSION=$$VERSION\nBUILD=$$BUILD" > root/.version-build && \
 	    docker build -t $(NAME):$$VERSION-$$BUILD . && \
 	    cp root/.version-build .version
