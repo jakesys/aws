@@ -4,7 +4,7 @@ set -e
 
 # install packages
 apk -U upgrade
-apk add groff less python py-pip
+apk add groff less python py2-pip
 pip install awscli
 
 # make sure our version matches
