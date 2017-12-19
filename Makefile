@@ -49,5 +49,5 @@ build:
 	    BUILD=`expr $$BUILD + 1` ; \
 	    echo "Building $(NAME) $$VERSION-$$BUILD ..." ; \
 	    echo -e "VERSION=$$VERSION\nBUILD=$$BUILD" > root/.version-build && \
-	    docker build -t $(NAME):$$VERSION-$$BUILD . && \
+	    docker build --pull -t $(NAME):$$VERSION-$$BUILD . && \
 	    cp root/.version-build .version
