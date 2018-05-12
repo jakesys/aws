@@ -16,5 +16,5 @@ if [ "$VERSION" != "$AWS_VERSION" ]; then
 fi
 
 # clean up
-apk del py-pip
+apk del py2-pip
 rm -rf /bootstrap.sh /var/lib/apk/* /var/tmp/* /var
